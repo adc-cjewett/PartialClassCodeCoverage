@@ -1,4 +1,6 @@
-﻿namespace CodeCoverageRepro.CoverageFormats.BitbucketFormat
+﻿using File = CodeCoverageRepro.CoverageFormats.Bitbucket.File;
+
+namespace CodeCoverageRepro.CoverageFormats.BitbucketFormat
 {
     public partial class Bitbucket
     {
@@ -6,5 +8,7 @@
         {
             Console.WriteLine("Hello");
         }
+
+        public List<File> MoreFiles { get; set; }
     }
 }
